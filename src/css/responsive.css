@@ -1,0 +1,615 @@
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* ===== EXTRA LARGE SCREENS (1400px+) ===== */
+@media (min-width: 1400px) {
+    .nav-container,
+    .dashboard,
+    .footer-container {
+        max-width: 1600px;
+    }
+    
+    .circular-timer {
+        width: 360px;
+        height: 360px;
+    }
+    
+    .timer-numbers {
+        font-size: 4.5rem;
+    }
+}
+
+/* ===== LARGE SCREENS (1200px - 1399px) ===== */
+@media (max-width: 1399px) {
+    .nav-container,
+    .dashboard,
+    .footer-container {
+        max-width: 1200px;
+    }
+}
+
+/* ===== MEDIUM SCREENS (992px - 1199px) ===== */
+@media (max-width: 1199px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .timer-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .circular-timer {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== SMALL SCREENS (768px - 991px) ===== */
+@media (max-width: 991px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .nav-container {
+        padding: 0 var(--space-lg);
+    }
+    
+    .dashboard {
+        padding: 0 var(--space-lg);
+        margin: var(--space-lg) auto;
+    }
+    
+    .panel-header {
+        padding: var(--space-md);
+    }
+    
+    .timer-container {
+        padding: var(--space-lg);
+    }
+    
+    .session-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timer-controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .presets-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .charts-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .modal {
+        max-width: 95%;
+    }
+}
+
+/* ===== TABLET PORTRAIT (576px - 767px) ===== */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .nav-container {
+        padding: 0 var(--space-md);
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .nav-controls .nav-btn span {
+        display: none;
+    }
+    
+    .user-stats .stat-item span:not(i) {
+        display: none;
+    }
+    
+    .dashboard {
+        padding: 0 var(--space-md);
+        margin: var(--space-md) auto;
+        gap: var(--space-md);
+    }
+    
+    .circular-timer {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .timer-numbers {
+        font-size: 3.5rem;
+    }
+    
+    .session-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .timer-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .presets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .task-input-section {
+        padding: var(--space-md);
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .input-actions {
+        width: 100%;
+    }
+    
+    .priority-select,
+    .add-task-btn {
+        flex: 1;
+    }
+    
+    .stats-overview {
+        grid-template-columns: 1fr;
+        padding: var(--space-md);
+    }
+    
+    .stat-card {
+        padding: var(--space-md);
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+    
+    .charts-container {
+        padding: var(--space-md);
+    }
+    
+    .chart-card {
+        padding: var(--space-md);
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        padding: 0 var(--space-md);
+    }
+    
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: var(--space-lg);
+    }
+    
+    .theme-selector {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== MOBILE LANDSCAPE (481px - 575px) ===== */
+@media (max-width: 575px) {
+    .nav-container {
+        padding: var(--space-sm);
+    }
+    
+    .logo {
+        gap: var(--space-sm);
+    }
+    
+    .logo .crown-spin {
+        font-size: 1.5rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .nav-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .dashboard {
+        margin: var(--space-sm) auto;
+    }
+    
+    .circular-timer {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .timer-numbers {
+        font-size: 3rem;
+    }
+    
+    .timer-mode {
+        font-size: 0.9rem;
+    }
+    
+    .control-btn {
+        padding: var(--space-sm);
+        font-size: 0.8rem;
+    }
+    
+    .control-btn i {
+        font-size: 1.2rem;
+    }
+    
+    .presets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .preset-btn {
+        padding: var(--space-sm);
+    }
+    
+    .tasks-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-sm);
+    }
+    
+    .tasks-filter {
+        justify-content: center;
+    }
+    
+    .sort-btn {
+        align-self: center;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal {
+        max-height: 85vh;
+    }
+    
+    .settings-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1 0 calc(50% - var(--space-xs));
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== SMALL MOBILE (320px - 480px) ===== */
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-sm);
+    }
+    
+    .logo {
+        justify-content: center;
+    }
+    
+    .nav-controls {
+        justify-content: center;
+    }
+    
+    .dashboard {
+        padding: var(--space-sm);
+    }
+    
+    .panel {
+        border-radius: var(--radius-md);
+    }
+    
+    .circular-timer {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .timer-numbers {
+        font-size: 2.5rem;
+    }
+    
+    .timer-mode {
+        font-size: 0.8rem;
+    }
+    
+    .info-card {
+        padding: var(--space-sm);
+        gap: var(--space-sm);
+    }
+    
+    .info-card i {
+        font-size: 1.2rem;
+    }
+    
+    .info-value {
+        font-size: 1rem;
+    }
+    
+    .quick-tags {
+        justify-content: center;
+    }
+    
+    .tag-btn {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+    
+    .chart-wrapper {
+        height: 150px;
+    }
+    
+    .modal-overlay {
+        padding: var(--space-sm);
+    }
+    
+    .modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: var(--space-md);
+    }
+    
+    .notification-container {
+        top: var(--space-sm);
+        right: var(--space-sm);
+        left: var(--space-sm);
+    }
+    
+    .shortcuts-help {
+        bottom: var(--space-sm);
+        right: var(--space-sm);
+        left: var(--space-sm);
+        max-width: none;
+    }
+}
+
+/* ===== VERY SMALL MOBILE (max-width: 319px) ===== */
+@media (max-width: 319px) {
+    .circular-timer {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .timer-numbers {
+        font-size: 2rem;
+    }
+    
+    .timer-controls .control-btn span {
+        display: none;
+    }
+    
+    .preset-btn span:first-child {
+        display: none;
+    }
+    
+    .theme-selector {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== ORIENTATION SPECIFIC ===== */
+@media (orientation: landscape) and (max-height: 500px) {
+    .royal-nav {
+        padding: var(--space-xs) 0;
+    }
+    
+    .nav-container {
+        padding: 0 var(--space-md);
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .dashboard {
+        margin: var(--space-sm) auto;
+        min-height: auto;
+    }
+    
+    .circular-timer {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .timer-numbers {
+        font-size: 2.5rem;
+    }
+    
+    .tasks-list {
+        max-height: 200px;
+    }
+    
+    .chart-wrapper {
+        height: 150px;
+    }
+    
+    .modal {
+        max-height: 85vh;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .royal-nav,
+    .nav-controls,
+    .timer-controls,
+    .presets-grid,
+    .task-input-section,
+    .tasks-header,
+    .analytics-controls,
+    .royal-footer,
+    button,
+    .modal-overlay,
+    .notification-container {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+    
+    .dashboard {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .panel {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        margin-bottom: 20pt;
+        break-inside: avoid;
+    }
+    
+    .panel-header {
+        border-bottom: 1px solid #ddd !important;
+    }
+    
+    .circular-timer {
+        filter: grayscale(100%) !important;
+    }
+    
+    .timer-numbers {
+        color: black !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    @page {
+        margin: 2cm;
+    }
+    
+    h1, h2, h3 {
+        color: black !important;
+        background: none !important;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .crown-spinner,
+    .progress-bar,
+    .loading-text,
+    .crown-spin,
+    .timer-colon,
+    .timer-running .progress-ring-circle,
+    .achievement.unlocked i,
+    .status-dot.online {
+        animation: none !important;
+    }
+    
+    .modal-overlay.active .modal {
+        animation: none !important;
+    }
+    
+    .notification {
+        animation: none !important;
+        transform: none !important;
+        opacity: 1;
+    }
+    
+    .notification.hide {
+        animation: none !important;
+    }
+}
+
+/* ===== DARK MODE PREFERENCE ===== */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        --bg-primary: #121212;
+        --bg-secondary: #1e1e1e;
+        --bg-tertiary: #2d2d2d;
+        --text-primary: #ffffff;
+        --text-secondary: #b0b0b0;
+        --text-accent: #ffd700;
+        --border-color: rgba(255, 255, 255, 0.1);
+        --card-bg: rgba(255, 255, 255, 0.05);
+        --hover-bg: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --royal-gold: #ffcc00;
+        --royal-purple: #9900ff;
+        --royal-blue: #0066cc;
+    }
+    
+    .border-color {
+        border-width: 2px;
+    }
+    
+    button,
+    input,
+    select {
+        border-width: 2px;
+    }
+}
+
+/* ===== INCREASED FONT SIZE PREFERENCE ===== */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        font-size: 18px;
+    }
+    
+    button,
+    input,
+    select {
+        font-size: 1.1rem;
+    }
+    
+    .nav-btn,
+    .control-btn,
+    .preset-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
